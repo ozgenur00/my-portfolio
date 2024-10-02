@@ -1,0 +1,209 @@
+/* Hero Section */
+.hero-section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #001523; 
+    color: #f4f4f4;
+    overflow: hidden;
+}
+
+.hero-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero-text {
+    z-index: 2;
+    flex: 1;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 7em;
+    font-weight: bold;
+    color: #8ad0dd;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 5em;
+    font-weight: bold;
+    color: #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #cccccc;
+}
+
+.neon-line {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 4px;
+    background: #00ffff; 
+    display: block; 
+    width: 0; 
+    transition: width 1s ease;
+    animation: glow 1.5s infinite alternate, expandLine 1.5s forwards;
+}
+
+@keyframes expandLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+    }
+    to {
+        box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 7rem; 
+    margin: 4rem;
+}
+
+:root {
+	--clr-neon: #00ffff;
+	--clr-bg: rgb(255, 255, 255);
+	--clr-white: rgba(255, 255, 255, 1);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+.button {
+	font-size: 1.5em;
+
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--clr-neon);
+	border: var(--clr-neon) 3px solid;
+	padding: 0.25em 1em;
+	border-radius: 0.25em;
+
+	text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.55), 0 0 0.5em currentColor;
+
+	box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+	position: relative;
+}
+
+.button::before {
+	pointer-events: none;
+	content: "";
+	position: absolute;
+	background: var(--clr-neon);
+	top: 120%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	transform: perspective(1.2em) rotateX(40deg) scale(1.5, 0.5);
+	filter: blur(1.15em);
+	opacity: 0.7;
+
+	transition: transform 0.5s linear;
+}
+
+.button::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 4em 0.6em var(--clr-neon), 0 0 1em 0.2em var(--clr-white);
+	opacity: 0;
+	background: var(--clr-neon);
+	z-index: -1;
+	transition: opacity 0.5s linear;
+}
+
+.button:hover,
+.button:focus {
+	color: var(--clr-bg);
+	text-shadow: none;
+}
+
+.button:hover::before,
+.button:focus::before {
+	opacity: 1;
+	transform: perspective(1em) rotateX(40deg) scale(1.5, 0.6);
+	transition: transform 0.5s linear;
+}
+
+.button:hover::after,
+.button:focus::after {
+	opacity: 1;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1, .hero-text h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.5em;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2rem;
+    }
+
+    .button {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1, .hero-text h2 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .button {
+        font-size: 1.2em;
+    }
+
+}

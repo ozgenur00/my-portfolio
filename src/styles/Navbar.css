@@ -1,0 +1,114 @@
+/* Navbar container */
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Logo */
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* Navigation links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: #8ad0dd;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00ffff;
+  }
+  
+  /* Hamburger menu icon */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #8ad0dd;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive: Show hamburger menu icon and hide links initially */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 1rem 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+/* Responsive design for phones (480px and below) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem 1rem; 
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .hamburger .line {
+    width: 20px; 
+  }
+}
