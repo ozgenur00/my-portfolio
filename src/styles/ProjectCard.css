@@ -71,38 +71,24 @@
     text-decoration: underline;
 }
 
-/* Existing responsive design for tablets */
 @media (max-width: 768px) {
-    .project-card {
-        flex-direction: column;
-    }
-
-    .project-image {
-        margin-bottom: 1rem;
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-
-@media (max-width: 480px) {
     .projects-section {
-        margin: 1rem;
-        padding: 1rem;
+        margin: 1.5rem;
+        padding: 1.5rem;
     }
 
     .project-card {
-        padding: 1rem;
         flex-direction: column;
-        align-items: center; 
+        padding: 1rem;
+        align-items: center;
         min-height: auto;
     }
 
     .project-image {
-        order: -1; 
+        order: -1;
         width: 100%;
-        max-width: none; 
-        margin-bottom: 1.5rem; 
+        max-width: none;
+        margin-bottom: 1.5rem;
     }
 
     .project-image img {
@@ -122,6 +108,47 @@
     }
 
     .project-links {
-        gap: 1rem; 
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .project-card {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+    }
+
+    .project-image {
+        order: -1;
+        width: 100%;
+        max-width: none;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-content a {
+        font-size: 1.2rem;
+    }
+
+    .project-links {
+        gap: 1rem;
     }
 }
