@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.c302c449.css",
+    "main.css": "/my-portfolio/static/css/main.3fc87033.css",
     "main.js": "/my-portfolio/static/js/main.bfcd8241.js",
     "static/media/daily-art-explorer.png": "/my-portfolio/static/media/daily-art-explorer.44cedf33996fb432d040.png",
     "static/media/finance-maanager.png": "/my-portfolio/static/media/finance-maanager.b697a19dadc7a1d0b9d5.png",
     "index.html": "/my-portfolio/index.html",
-    "main.c302c449.css.map": "/my-portfolio/static/css/main.c302c449.css.map",
+    "main.3fc87033.css.map": "/my-portfolio/static/css/main.3fc87033.css.map",
     "main.bfcd8241.js.map": "/my-portfolio/static/js/main.bfcd8241.js.map"
   },
   "entrypoints": [
-    "static/css/main.c302c449.css",
+    "static/css/main.3fc87033.css",
     "static/js/main.bfcd8241.js"
   ]
 }
