@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/About.css';
-import myImage from '../images/my-img.jpg'
+// import myImage from '../images/my-img.jpg'
 import resume from '../files/Ozgenur-catal-resume.pdf'
 
 function About() {
@@ -27,7 +27,7 @@ function About() {
           <p data-aos="fade-up" data-aos-delay="400">
             I’m always up for a challenge, and I live for that “aha!” moment when a tricky problem finally clicks. Whether it's crafting a user-friendly UI or speeding up database queries, I love bringing creative ideas to life through code. Let’s build something amazing!
           </p>
-          <a href={resume} data-aos="fade-up" data-aos-delay="700" class="resume-link" target="_blank" rel="noopener noreferrer">My Resume</a>
+          <a href={resume} data-aos="fade-up" data-aos-delay="500" class="resume-link" target="_blank" rel="noopener noreferrer">My Resume</a>
         </div>
       </div>
     </section>

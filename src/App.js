@@ -1,18 +1,17 @@
 import React from "react";
 import './styles/App.css';
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";   // Import the Hero component
-import About from "./components/About"; // Import the About component
-import Footer from "./components/Footer"; // Import the Footer component
+import Hero from "./components/Hero";   
+import About from "./components/About"; 
+import Footer from "./components/Footer"; 
 import ScrollingBanner from "./components/ScrollingBanner";
-import ProjectCard from "./components/ProjectCard";
 import Projects from "./components/Projects";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero /> {/* Hero Section added here */}
+      <Hero />
       <main>
         <ScrollingBanner />
         <About />
