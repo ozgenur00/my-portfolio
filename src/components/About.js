@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/About.css';
+import myImage from '../images/my-img.jpg'
+import resume from '../files/Ozgenur-catal-resume.pdf'
 
 function About() {
   useEffect(() => {
@@ -11,9 +13,9 @@ function About() {
   return (
     <section id="about" className='about-section' data-aos="fade-up">
       <div className='about-container'>
-        <div className='about-image-card' data-aos="fade-up">
-          <img src="your-image-url.jpg" alt="Ozgenur" className="about-image" />
-        </div>
+        {/* <div className='about-image-card' data-aos="fade-up">
+          <img src={myImage} alt="Ozgenur" className="about-image" />
+        </div> */}
         <div className='about-content'>
           <h2>My Techy Tale</h2>
           <p data-aos="fade-up">
@@ -25,6 +27,7 @@ function About() {
           <p data-aos="fade-up" data-aos-delay="400">
             I’m always up for a challenge, and I live for that “aha!” moment when a tricky problem finally clicks. Whether it's crafting a user-friendly UI or speeding up database queries, I love bringing creative ideas to life through code. Let’s build something amazing!
           </p>
+          <a href={resume} data-aos="fade-up" data-aos-delay="700" class="resume-link" target="_blank" rel="noopener noreferrer">My Resume</a>
         </div>
       </div>
     </section>

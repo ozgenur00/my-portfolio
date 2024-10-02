@@ -10,27 +10,52 @@
 .about-container {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
   max-width: 1200px; 
   margin: 0 auto;
-  flex-wrap: wrap; 
+  flex-wrap: nowrap;
 }
 
-/* Image Card */
-.about-image-card {
-  flex: 1;
-  max-width: 350px; 
-}
-
+/* Image Card with Polaroid Effect */
+/* .about-image-card {
+  flex: 1.2;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column; /* Ensure the link appears below the image */
+  /* align-items: center; /* Center the image and link */
+  /* justify-content: center;
+} */ 
+/*
 .about-image {
   width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border: 10px solid white;
+  padding-bottom: 20px;
+} */
+
+/* Resume Link */
+.resume-link {
+  margin-top: 120px; 
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
 }
 
+.resume-link:hover {
+  color: #f4f4f4cc;
+}
+
+
+/* Content Section */
 .about-content {
-  flex: 2;
+  flex: 2.5;
   text-align: left;
 }
 
@@ -43,7 +68,7 @@ h2 {
 p {
   margin-bottom: 20px;
   font-size: 1.7rem;
-  color: #cccccc; 
+  color: #cccccc;
 }
 
 /* Responsive Styles */
