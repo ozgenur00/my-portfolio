@@ -78,7 +78,7 @@
     }
 
     .project-card {
-        flex-direction: column;
+        flex-direction: column !important;
         padding: 1rem;
         align-items: center;
         min-height: auto;
@@ -120,7 +120,7 @@
 
     .project-card {
         padding: 1rem;
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: center;
         min-height: auto;
     }
