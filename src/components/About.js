@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/About.css';
-// import myImage from '../images/my-img.jpg'
-import resume from '../files/Ozgenur-catal-resume.pdf'
+import resume from '../files/ozgenur-catal-resume.pdf'
 
 function About() {
   useEffect(() => {
